@@ -1,4 +1,11 @@
 body {
   margin: auto;
   max-width: 50em;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+h1{
+  marigin-top: 1em;
+  margin-right: 1em;
 }
