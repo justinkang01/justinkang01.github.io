@@ -4,15 +4,19 @@ body {
   font-family: "Helvetica", sans-serif;
   line-height: 1.5;
   padding: 4em 1em;
-
+  background-color: #FFFFFF;
+  color: #2c2c2c;
 }
-h1{
+
+h1 {
   marigin-top: 1em;
   margin-right: 1em;
 }
-pre{
-  color: #2c2c2c;
-  background-color: #757575;
+
+pre {
+  color: #58D68D;
+  background-color: #eeeeee;
   overflow: auto;
   white-space: pre-wrap;
+  font-family: "Helvetica", sans-serif;
 }
