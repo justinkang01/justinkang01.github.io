@@ -4,7 +4,7 @@ body {
   font-family: "Helvetica", sans-serif;
   line-height: 1.5;
   padding: 4em 1em;
-  background-color: #FFFFFF;
+  background-color: #eeeeee;
   color: #2c2c2c;
 }
 
@@ -15,7 +15,7 @@ h1 {
 
 pre {
   color: #58D68D;
-  background-color: #eeeeee;
+  background-color: #FFFFFF;
   overflow: auto;
   white-space: pre-wrap;
   font-family: "Helvetica", sans-serif;
