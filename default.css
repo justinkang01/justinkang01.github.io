@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* creating a diagonal striped line background for use on all pages*/
+
+html {
+  height: 100%;
+  background: repeating-linear-gradient( -55deg, #333, #333 30px, #222 30px, #222 150px);
+}
+
+header {
+  background: white;
+}
+
+/* a trick to reset the header and make it appear */
+
+/* header::after {
+  content: '';
+  display: table;
+  clear: both;
+} */
+
+/* #header {
+  color: #333;
+  font-family: 'consolas', sans-serif;
+  font-size: 46px;
+  text-align: center;
+  padding: 20px 10px;
+  float: left;
+} */
+
+/* Starting to style navigation bar for default bar*/
+
+.nav-links-default {
+  background-color: white;
+  overflow: hidden;
+}
+
+.nav-links-default a {
+  float: right;
+  text-align: center;
+  margin-right: 5px;
+  padding: 20px 16px;
+  color: #222;
+  font-family: 'consolas', sans-serif;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-links-default a:hover {
+  background-color: #222;
+  color: white;
+}
+
+.nav-links-default a.active {
+  background-color: rgb(104, 126, 223);
+  color: white;
+}
+
+.nav-links-default .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links-default a:not(:first-child) {
+    display: none;
+  }
+  .nav-links-default a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links-default.responsive {
+    position: relative;
+  }
+  .nav-links-default.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-links-default.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

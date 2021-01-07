@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* creating a diagonal striped line background for use on all pages*/
+
+html {
+  height: 100%;
+  background: repeating-linear-gradient( -55deg, #333, #333 30px, #222 30px, #222 150px);
+}
+
+header {
+  background: white;
+}
+
+/* a trick to reset the header and make it appear */
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#header {
+  color: #333;
+  font-family: 'consolas', sans-serif;
+  font-size: 46px;
+  text-align: center;
+  padding: 20px 10px;
+  float: left;
+}
+
+/* a specific id for the home page to center the nav bar on the viewport */
+
+#name {
+  color: white;
+  position: absolute;
+  font-family: 'consolas', sans-serif;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Starting to style navigation bar
+   there are 2 ids, one for the home screen
+   and the rest are considered 'default'*/
+
+.nav-home {
+  width: 80%;
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-links-home {
+  flex: 1;
+  text-align: center;
+  top: 70%;
+  left: 50%;
+}
+
+.nav-links-home ul li {
+  list-style: none;
+  display: inline;
+  margin: auto 20px;
+}
+
+.nav-links-home ul li a {
+  color: white;
+  font-family: 'consolas', sans-serif;
+  text-decoration: none;
+  position: relative;
+}
+
+/* following a guide by Jhey Tompkins on creating a CSS overlay for a 
+   circular image, this is the styling for the picture of me that appears
+   when you hover in between my name and the nav bar */
+
+.img {
+  border-radius: 50%;
+  display: flex;
+  height: 250px;
+  width: 250px;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.img img {
+  margin-top: -30%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.25s ease;
+  z-index: 1;
+}
+
+.profile:hover {
+  opacity: 1;
+}
