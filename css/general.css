@@ -128,8 +128,6 @@ header {
   height: auto;
 }
 
-.WIP {}
-
 .hobbies {
   grid-area: r2;
   justify-self: center;

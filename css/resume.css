@@ -107,8 +107,6 @@ header {
   align-self: self;
 }
 
-.WIP {}
-
 .coursework {
   grid-area: r1;
   justify-self: center;
