@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link href="default.css" rel="stylesheet">
+  <link href="css/general.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <script src="script.js"></script>
@@ -10,46 +10,77 @@
 </head>
 
 <body>
-  <!-- <header>
-    <h1 id="header">justin kang</h1>
-     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-   <nav> 
-   <div class="nav-links-default" id="nav-links-default"> 
-   <ul> 
-   <li><a href="../index.html">home</a></li>
-    <li><a href="#" class="active">about-me</a></li>
-    <li><a href="#">resume</a></li>
-    <li><a href="#">projects</a></li>
-    <li><a href="https://github.com/justinkang01" target="_blank">github</a></li>
-    <li><a href="https://www.linkedin.com/in/justin-kang-489651160/" target="_blank">linkedin</a></li>
-    <li>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </li> 
-   </ul> 
-   </div> 
-  </nav> 
-  <label for="nav-toggle" class="nav-toggle-label">
-      <span></span>
-    </label>
-  </header> -->
 
   <header>
-    <!-- <h1 id="header">justin kang</h1> -->
+    <h1 id="logo">justin kang</h1>
     <div class="nav-links-default" id="nav-links-default">
       <a href="index.html">home</a>
       <a href="#" class="active">about-me</a>
-      <a href="#">resume</a></li>
-      <a href="#">projects</a></li>
-      <a href="https://github.com/justinkang01" target="_blank">github</a>
-      <a href="https://www.linkedin.com/in/justin-kang-489651160/" target="_blank">linkedin</a>
+      <a href="resume.html">resume</a></li>
+      <a href="projects.html">projects</a></li>
+      <a href="https://github.com/justinkang01" target="_blank" class="external">github</a>
+      <a href="https://www.linkedin.com/in/justin-kang-489651160/" target="_blank" class="external">linkedin</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-
   </header>
+  <div class="main-container">
+    <!-- about me section -->
+    <div class="about-me contents">
+      <div class="container twoCol">
+        <div id="about-me-header">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-me-img">
+          <img src="links-and-images/images/IMG_0049.JPG">
+        </div>
+
+        <div class="desc">
+          <p>Hi! I'm Justin Kang and I'm a sophomore undergraduate computer science student at Cornell
+            University in Ithaca, NY. </br>
+            I was born in New York and raised in New Jersey, where I currently live</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- hobbies section -->
+    <div class="hobbies contents">
+      <div class="container twoColFlip">
+        <div id="hobbies-header">
+          <h2>Hobbies</h2>
+        </div>
+        <div class="hobbies-img">
+          <img src="links-and-images/images/IMG_7495.JPEG">
+        </div>
+        <div class="desc">
+          <p>To balance out the coursework and extracurriculars that I might have,
+            I find myself indulging in things I like to do, such as:</p> </br>
+          <ul>
+            <li>Guitar: whether it be jamming out with some friends or learning
+              a new song, guitar is one of my escapes from life. I've been playing
+              since 11th grade, so there's still a lot to learn!
+            </li>
+            <li>Frisbee: although Cornell is a bit grayer than I would like,
+              there are some rare days when the sun shines and the weather is
+              the perfect condition to throw a frisbee disk with my friends!
+            </li>
+            <li>Volleyball: similar to frisbee, there aren't a lot of opportunities
+              to play, but if the weather is nice enough, or if there are any indoor
+              gyms open, volleyball is the first thing my friends and I rush to.
+            </li>
+            <li>Cooking: I'm no Michelin star chef, but with the likes of <a href="http://www.kenjilopezalt.com/bio">J.
+                Kenji Lopez-Alt</a>,
+              <a href="https://www.youtube.com/user/bgfilms">Andrew Rea</a>, and <a
+                href="https://www.youtube.com/channel/UCDq5v10l4wkV5-ZBIJJFbzQ">Ethan Chlebowski</a>
+              I can learn to cook for myself.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

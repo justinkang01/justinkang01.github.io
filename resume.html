@@ -2,13 +2,93 @@
 <html lang="en">
 
 <head>
+  <link href="css/resume.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>resume</title>
+  <script src="script.js"></script>
+  <title>about me</title>
 </head>
 
 <body>
 
+  <header>
+    <h1 id="logo">justin kang</h1>
+    <div class="nav-links-default" id="nav-links-default">
+      <a href="index.html">home</a>
+      <a href="aboutme.html">about-me</a>
+      <a href="resume.html" class="active">resume</a></li>
+      <a href="projects.html">projects</a></li>
+      <a href="https://github.com/justinkang01" target="_blank" class="external">github</a>
+      <a href="https://www.linkedin.com/in/justin-kang-489651160/" target="_blank" class="external">linkedin</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <div class="main-container">
+    <!-- <div class="WIP">
+      <div class="container twoCol">
+        THIS IS A WORK IN PROGRESS
+      </div>
+    </div> -->
+    <!-- coursework section -->
+    <div class="coursework contents">
+      <div class="container twoCol">
+        <div id="coursework-header">
+          <h2>CS and Relevant Coursework</h2>
+        </div>
+        <div class="coursework-img"></div>
+
+        <div class="desc">
+          <ul>
+            <li>CS 1110: Introduction to Python</li>
+            <li>CS 2110: OOP and Data Structures</li>
+            <li>CS 2800: Discrete Structures</li>
+            <li>MATH 2940: Linear Algebra</li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- extracurriculars section -->
+    <div class="extracurriculars contents">
+      <div class="container twoCol">
+        <div id="extracurriculars-header">
+          <h2>Extracurriculars</h2>
+        </div>
+        <div class="extracurriculars-img"></div>
+
+        <div class="extracurriculars-desc">
+
+          <div class="activites" id="a1">
+            <div class="date">
+              September 2019
+            </div>
+            <div class="activity-description">
+              Joined Cornell University Solar Boat and Emmaus Road
+            </div>
+          </div>
+          <div class="activites" id="a2">
+            <div class="date">
+              November 2019
+            </div>
+            <div class="activity-description">
+              Joined the Boxing Club at Cornell (recreational)
+            </div>
+
+            <!-- <div class="activites" id="#">
+              <div class="date">
+
+              </div>
+              <div class="activity-description">
+                
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 
 </html>
