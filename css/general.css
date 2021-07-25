@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #333;
+  /* background-color: #333; */
 }
 
 header {
@@ -32,6 +32,8 @@ header {
 .nav-links-default {
   background-color: white;
   overflow: hidden;
+  margin-top: 30px;
+  margin-right: 20px;
 }
 
 .nav-links-default a {
@@ -43,6 +45,8 @@ header {
   font-family: 'consolas', sans-serif;
   text-decoration: none;
   position: relative;
+  border-radius: 50px;
+  transition: .35s;
 }
 
 .nav-links-default a:hover {
@@ -162,7 +166,7 @@ header {
    of image, header, text in the two column boxes */
 
 @media screen and (max-width: 900px) {
-  .nav-links-default a:not(:first-child) {
+  .nav-links-default a {
     display: none;
   }
   .nav-links-default a.icon {
